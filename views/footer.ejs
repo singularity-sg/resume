@@ -1,3 +1,25 @@
-<div id="footer">
-This is my footer
-</div>
+      <div class="footer">
+        <small>Crafted with <a href="http://nodejs.org/" target="_blank">node.js</a>,<a href="http://expressjs.com/" target="_blank">express</a> & <a href="http://twitter.github.io/bootstrap/" target="_blank">bootstrap.js</a> &copy; Lim Han 2013<small>
+      </div>
+
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function() {
+	    $('#contact').modal('hide');
+	});
+
+        function contact() {
+            var email = 'lim' + '.' + 'han' + '@' + 'gmail' + '.' + 'com';
+            var mobile = '+' + (100000000000 - 93406173244);
+            $('#email').text(email);
+	    $('#mobile').text(mobile);
+            $('#github').text("https://github.com/singularity-sg/");
+            $('#github').attr("href", "https://github.com/singularity-sg/");
+	    $('#contact').modal('show');
+	}
+    </script>
+  </body>
+</html>
