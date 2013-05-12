@@ -30,6 +30,7 @@ app.get('/', routes.experience);
 app.get('/experience', routes.experience);
 app.get('/skills', routes.skills);
 app.get('/contact', routes.contact);
+app.get('/print', routes.print);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

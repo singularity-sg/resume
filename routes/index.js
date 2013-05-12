@@ -15,3 +15,6 @@ exports.contact = function(req, res) {
   res.render('contact', { title: 'Lim Han - How to contact me', headerTitle: 'Contact', active: 'contact' });
 };
 
+exports.print = function(req, res) {
+  res.render('print');
+};
