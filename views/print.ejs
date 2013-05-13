@@ -19,7 +19,17 @@
     }
     </style>
   </head>
-  <body>      
+  <body>
+      <h3>Biodata</h3>
+      <div class="row-fluid marketing">
+        <div class="span12">
+          <span><strong>First Name</strong> Han</span><br />
+	  <span><strong>Last Name</strong> Lim</span><br />
+	  <span><strong>Email</strong><span id="email"></span></span><br />
+	  <span><strong>Mobile</strong><span id="mobile"></span></span><br /> 
+	  <span><strong>GitHub</strong><span id="github"></span></span><br /> 
+	</div>
+      </div>
       <h3>Experience</h3>
       <div class="row-fluid marketing">
         <div class="span12">
@@ -71,7 +81,7 @@
             <span>
 	  </p>
         </div>
-     </div>
+      </div>
 
       <hr />
 
@@ -148,5 +158,18 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+          function () {
+	    var email = 'lim' + '.' + 'han' + '@' + 'gmail' + '.' + 'com';
+            var mobile = '+' + (100000000000 - 93406173244);
+            $('#email').text(email);
+	    $('#mobile').text(mobile);
+            $('#github').text("https://github.com/singularity-sg/");
+	  }
+	};
+    </script>
+
   </body>
 </html>
