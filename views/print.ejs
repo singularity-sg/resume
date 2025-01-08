@@ -24,23 +24,23 @@
       	<br/>
       	<h3>Biodata</h3>
       	
-      	<%include biodata %>
+      	<%- include('biodata.ejs') %>
       
       	<hr />
 
       	<h3>Experience</h3>
       
-      	<%include experience-body %>
+      	<%- include('experience-body.ejs') %>
       	
       	<hr />
 
       	<h3>Skills</h3>
       	
-        <%include skills-body %>
+        <%- include('skills-body.ejs') %>
 
         <br />
 
-        <%include footer %>
+        <%- include('footer.ejs') %>
       
 	    <script src="js/jquery-1.9.1.min.js"></script>
 	    <script type="text/javascript">
